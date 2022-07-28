@@ -1,0 +1,112 @@
+@startuml
+annotation java.lang.Override
+annotation javax.servlet.annotation.WebServlet
+class PUSL2024G77.AuthorizePaymentServlet
+class PUSL2024G77.DBconPUSL
+class PUSL2024G77.DBdetail
+class PUSL2024G77.DBselect
+class PUSL2024G77.ExecutePaymentServlet
+class PUSL2024G77.HttpServlet
+class PUSL2024G77.OrderDetail
+class PUSL2024G77.PaymentServices
+class PUSL2024G77.Regist
+class PUSL2024G77.ReviewPaymentServlet
+class PUSL2024G77.SMS
+class PUSL2024G77.User
+class PUSL2024G77.UserVerify
+class PUSL2024G77.VerifyCode
+class PUSL2024G77.sendEmail
+class com.paypal.base.rest.PayPalRESTException
+class java.io.BufferedReader
+class java.io.IOException
+class java.io.InputStreamReader
+class java.io.PrintWriter
+class java.lang.Integer
+class java.net.HttpURLConnection
+class java.net.URL
+class java.sql.Connection
+class java.sql.DriverManager
+class java.sql.PreparedStatement
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.sql.Statement
+class java.util.ArrayList
+class java.util.List
+class java.util.Properties
+class java.util.Random
+class javax.mail.Authenticator
+class javax.mail.Message
+class javax.mail.PasswordAuthentication
+class javax.mail.Session
+class javax.mail.Transport
+class javax.mail.internet.InternetAddress
+class javax.mail.internet.MimeMessage
+class javax.servlet.ServletException
+class javax.servlet.http.HttpServlet
+class javax.servlet.http.HttpServletRequest
+class javax.servlet.http.HttpServletResponse
+class javax.servlet.http.HttpSession
+PUSL2024G77.AuthorizePaymentServlet ..> javax.servlet.annotation.WebServlet
+PUSL2024G77.AuthorizePaymentServlet --|> PUSL2024G77.HttpServlet
+PUSL2024G77.AuthorizePaymentServlet ..> com.paypal.base.rest.PayPalRESTException
+PUSL2024G77.AuthorizePaymentServlet ..> java.io.IOException
+PUSL2024G77.AuthorizePaymentServlet ..> java.lang.Integer
+PUSL2024G77.AuthorizePaymentServlet ..> java.sql.Connection
+PUSL2024G77.AuthorizePaymentServlet ..> java.sql.DriverManager
+PUSL2024G77.AuthorizePaymentServlet ..> java.sql.Statement
+PUSL2024G77.AuthorizePaymentServlet ..> java.util.List
+PUSL2024G77.AuthorizePaymentServlet ..> javax.servlet.ServletException
+PUSL2024G77.DBconPUSL ..> java.sql.Connection
+PUSL2024G77.DBconPUSL ..> java.sql.DriverManager
+PUSL2024G77.DBconPUSL ..> java.sql.SQLException
+PUSL2024G77.DBdetail ..> java.lang.Override
+PUSL2024G77.DBselect ..> java.sql.Connection
+PUSL2024G77.DBselect ..> java.sql.PreparedStatement
+PUSL2024G77.DBselect ..> java.sql.ResultSet
+PUSL2024G77.DBselect ..> java.util.ArrayList
+PUSL2024G77.DBselect ..> java.util.List
+PUSL2024G77.ExecutePaymentServlet ..> javax.servlet.annotation.WebServlet
+PUSL2024G77.ExecutePaymentServlet --|> PUSL2024G77.HttpServlet
+PUSL2024G77.ExecutePaymentServlet ..> com.paypal.base.rest.PayPalRESTException
+PUSL2024G77.ExecutePaymentServlet ..> java.io.IOException
+PUSL2024G77.ExecutePaymentServlet ..> javax.servlet.ServletException
+PUSL2024G77.Regist ..> java.sql.Connection
+PUSL2024G77.Regist ..> java.sql.DriverManager
+PUSL2024G77.Regist ..> java.sql.PreparedStatement
+PUSL2024G77.Regist ..> java.sql.ResultSet
+PUSL2024G77.Regist ..> java.sql.SQLException
+PUSL2024G77.ReviewPaymentServlet ..> javax.servlet.annotation.WebServlet
+PUSL2024G77.ReviewPaymentServlet --|> PUSL2024G77.HttpServlet
+PUSL2024G77.ReviewPaymentServlet ..> com.paypal.base.rest.PayPalRESTException
+PUSL2024G77.ReviewPaymentServlet ..> java.io.IOException
+PUSL2024G77.SMS ..> java.io.BufferedReader
+PUSL2024G77.SMS ..> java.io.InputStreamReader
+PUSL2024G77.SMS ..> java.net.HttpURLConnection
+PUSL2024G77.SMS ..> java.net.URL
+PUSL2024G77.UserVerify ..> java.lang.Override
+PUSL2024G77.UserVerify ..> java.io.IOException
+PUSL2024G77.UserVerify ..> java.io.PrintWriter
+PUSL2024G77.UserVerify ..> javax.servlet.ServletException
+PUSL2024G77.UserVerify --|> javax.servlet.http.HttpServlet
+PUSL2024G77.UserVerify ..> javax.servlet.http.HttpServletRequest
+PUSL2024G77.UserVerify ..> javax.servlet.http.HttpServletResponse
+PUSL2024G77.UserVerify ..> javax.servlet.http.HttpSession
+PUSL2024G77.VerifyCode ..> java.lang.Override
+PUSL2024G77.VerifyCode ..> java.io.IOException
+PUSL2024G77.VerifyCode ..> java.io.PrintWriter
+PUSL2024G77.VerifyCode ..> javax.servlet.ServletException
+PUSL2024G77.VerifyCode --|> javax.servlet.http.HttpServlet
+PUSL2024G77.VerifyCode ..> javax.servlet.http.HttpServletRequest
+PUSL2024G77.VerifyCode ..> javax.servlet.http.HttpServletResponse
+PUSL2024G77.VerifyCode ..> javax.servlet.http.HttpSession
+PUSL2024G77.sendEmail ..> java.lang.Override
+PUSL2024G77.sendEmail ..> java.util.Properties
+PUSL2024G77.sendEmail ..> java.util.Random
+PUSL2024G77.sendEmail ..> javax.mail.Authenticator
+PUSL2024G77.sendEmail ..> javax.mail.Message
+PUSL2024G77.sendEmail ..> javax.mail.PasswordAuthentication
+PUSL2024G77.sendEmail ..> javax.mail.Session
+PUSL2024G77.sendEmail ..> javax.mail.Transport
+PUSL2024G77.sendEmail ..> javax.mail.internet.InternetAddress
+PUSL2024G77.sendEmail ..> javax.mail.internet.MimeMessage
+@enduml
